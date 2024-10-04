@@ -1,6 +1,6 @@
 "use client";
 import { Avatar, Button, Chip } from "@nextui-org/react";
-import { cv, githubIcon, linkedinIcon, Mail01Icon } from "../page";
+import { cv, githubIcon, linkedinIcon, Mail01Icon } from "../icons/icons";
 import { useEffect, useState } from "react";
 
 const About = () => {
