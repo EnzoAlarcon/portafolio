@@ -6,12 +6,14 @@ import { cv, githubIcon, linkedinIcon, Mail01Icon } from "./icons/icons";
 
 export default function Home() {
 
-  const [isMobile, setIsMobile] = useState(
-    false
+  const [isMobile, setIsMobile] = useState<boolean | null>(
+    null
   );
-
+  
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+    setIsMobile(mediaQuery.matches);
 
     const handleResize = () => {
       setIsMobile(mediaQuery.matches);

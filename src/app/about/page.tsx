@@ -5,12 +5,14 @@ import { useEffect, useState } from "react";
 
 const About = () => {
 
-  const [isMobile, setIsMobile] = useState(
-    false
+  const [isMobile, setIsMobile] = useState<boolean | null>(
+    null
   );
-
+  
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+    setIsMobile(mediaQuery.matches);
 
     const handleResize = () => {
       setIsMobile(mediaQuery.matches);
