@@ -52,7 +52,7 @@ export default function NavBar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link href="/" className="font-bold text-inherit">INICIO</Link>
+          <Link href="/" className="font-bold text-inherit">Portafolio</Link>
         </NavbarBrand>
       </NavbarContent>
 
@@ -75,7 +75,7 @@ export default function NavBar() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              color={'foreground'}
+              color={`${isActive(item.path) ? "primary" : "foreground"}`}
               className="w-full"
               href={item.path}
               size="lg"

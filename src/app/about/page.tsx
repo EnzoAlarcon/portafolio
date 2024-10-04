@@ -1,7 +1,7 @@
 "use client";
-import { Avatar, Button, Chip } from "@nextui-org/react";
-import { cv, githubIcon, linkedinIcon, Mail01Icon } from "../icons/icons";
+import { Avatar, Chip } from "@nextui-org/react";
 import { useEffect, useState } from "react";
+import RedesSociales from "../components/RedesSociales";
 
 const About = () => {
 
@@ -101,21 +101,7 @@ const About = () => {
         </div>
       </section>
     </main>
-      <section className="flex justify-center my-10 gap-2">
-        <Button color="primary" variant="solid" startContent={Mail01Icon} radius="full">
-          {isMobile ? "" :"enzoalarcon01@gmail.com"}
-        </Button>
-        <Button color="primary" variant="ghost" radius="full">
-          {cv}
-        </Button>
-        <Button color="primary" variant="ghost" radius="full"
-        >
-          {linkedinIcon}
-        </Button>
-        <Button color="primary" variant="ghost" radius="full" >
-          {githubIcon}
-        </Button>
-      </section>
+     <RedesSociales></RedesSociales>
           </div>
   );
 };
