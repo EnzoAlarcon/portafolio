@@ -64,9 +64,18 @@ export default function Home() {
   );
 }
 
-export const cv = (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text css-svt5ra"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>file-text</svg>
-)
+export const cv = (<svg fill="none" viewBox="0 0 24 24" height="2em" width="2em">
+  <path
+    fill="currentColor"
+    d="M7 18h10v-2H7v2zM17 14H7v-2h10v2zM7 10h4V8H7v2z"
+  />
+  <path
+    fill="currentColor"
+    fillRule="evenodd"
+    d="M6 2a3 3 0 00-3 3v14a3 3 0 003 3h12a3 3 0 003-3V9a7 7 0 00-7-7H6zm0 2h7v5h6v10a1 1 0 01-1 1H6a1 1 0 01-1-1V5a1 1 0 011-1zm9 .1A5.009 5.009 0 0118.584 7H15V4.1z"
+    clipRule="evenodd"
+  />
+</svg>)
 
 
 export const Mail01Icon = (
